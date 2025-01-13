@@ -5,11 +5,11 @@
     color: white;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
 
 :root{
     
---fonte-principal:"Press Start 2P", serif ;
+--fonte01:"ChaKra Petch",serif;
 
 }
 
@@ -27,7 +27,7 @@ background-size: cover;
 
 .container{
     margin-top: 25%;
-
+justify-content: center;
 
 }
 
@@ -35,22 +35,26 @@ background-size: cover;
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 2px solid rgb(156, 16, 232);
-    border-radius: 15px 0px ;
-    margin:0px 3%;
-    padding: 1%;
+    border: 3px solid rgb(156, 16, 232);
+    border-radius: 15px ;
+    padding: 5%;
     box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.601);
+    height: 300px;
+    width: 100%;
 }
 
 .container__informacoes{
 display: flex;
 justify-content: flex-start;
 flex-direction: column;
-width: 50%;
+
 }
-.container__texo,h1,p{
+
+.container__texto h1,p{
 color: black;
-font-family:monospace;
+text-align: center;
+font-family: var(--fonte01);
+width:auto;
 }
 
 
@@ -61,7 +65,6 @@ font-family:monospace;
 
 .container__imagem__pessoa{
 width: 30%;
-
 
 
 }
