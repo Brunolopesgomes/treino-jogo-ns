@@ -125,6 +125,12 @@ width: 100px;
 
 @media screen and (min-width:425px) {
 
+    .conteudo01{
+        display:flex ;
+    height: 500px;
+    align-items: center;
     
+    }
+
     
 }
