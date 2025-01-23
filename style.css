@@ -34,7 +34,7 @@ background-size: cover;
     border-radius: 15px ;
     padding: 5%;
     box-shadow: -15px 15px 30px rgba(0, 0, 0, 0.601);
-    height: 400px;
+    height: 450px;
     width:90%;
     
 background-color:rgba(137, 43, 226, 0.524);
@@ -55,6 +55,8 @@ margin-bottom: 10%;
 border: 2px solid rgb(7, 173, 234);
 border-radius: 10px;
 padding: 5%;
+
+box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.601);
 }
 
 .conteudo__informacoes02{
@@ -76,20 +78,26 @@ flex-direction:column;
 .texto__paragrafo{
 font-size:19px;
 text-align: center;
-
 text-shadow: 1px 1px 1px rgb(4, 178, 178);
 font-family: var(--fonte02);
 color: black;
 width: 100%;
+border-radius: 10px;
+border: 2px solid black;
+padding: 2%;
+background-color: rgba(137, 43, 226, 0.759);
 }
 
 .input{
     color:black;
-width:30%;
+width:50%;
 height: 30px;
    border-radius: 5px; 
-   margin-top: 5%;
+   margin-top: 10%;
+   margin-bottom: 3%;
    background-color: rgb(16, 239, 239);
+   
+   text-align: center
 }
 
 .botoes{
@@ -107,15 +115,21 @@ height: 30px;
 background-color: blue;
 border-radius: 5px;
 width: 100px;
-height: 40px;
+height: 50px;
+font-family: var(--fonte01);
+font-size: 17px;
 
+box-shadow: -3px 3px 1px rgb(0, 0, 0);
 }
 .botao__reiniciar{
     
     border-radius: 5px;
-    height: 40px;
-width: 100px;
-
+    width: 100px;
+    height: 50px;
+    font-size: 17px;
+    font-family: var(--fonte01);
+    
+box-shadow: 3px 3px 1px rgb(0, 0, 0);
 }
 
 
@@ -132,5 +146,103 @@ width: 100px;
     
     }
 
+.input{
+
+margin: 10% 0% 10% 0%;
+
+}
+
+    .botao__chute{
+        width: 150px;
+        height: 70px;
     
+    }
+
+    .botao__reiniciar{
+    
+        width: 150px;
+        height: 70px;
+    
+    }
+    
+}
+
+@media screen and (min-width:768px){
+    .conteudo01{
+        display:flex ;
+    justify-content: center;
+    align-items: center;
+    }   
+
+
+}
+@media screen and (min-width:1024px){
+
+    .conteudo01{
+    margin-top: 5%;
+    width: 70%;
+    
+    }
+
+    
+}
+@media screen and (min-width:1440px) {
+    
+    .conteudo01{
+        margin-top: 2%;
+        width: 90%;
+        
+        }
+    
+
+
+}
+@media screen and (min-width:2560px){
+    .conteudo01{
+        margin-top: 2%;
+        width: 60%;
+        height:1300px;
+        padding: 0%;
+
+        
+        }
+        .conteudo__titulo h1{
+            width:1000px;
+            height: 210px;
+            font-size: 55px;
+            margin-top: -10%;
+            margin-bottom: 10%;
+
+        
+        }
+        .texto__paragrafo{
+            display: flex;
+            width:700px;
+            height: 150px;
+            font-size: 30px;
+            align-items: center;
+            justify-content: center;
+        
+        }
+
+        .input{
+        width: 300px;
+        height: 100px;
+        font-size: 55px;
+        text-align: center;
+       
+        }
+
+
+        .botao__chute{
+        width:300px;
+        height: 150px;
+        font-size: 35px;
+        
+        }
+    .botao__reiniciar{
+        width:300px;
+        height: 150px;
+        font-size: 35px;
+    }
 }
