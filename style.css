@@ -107,7 +107,6 @@ height: 30px;
  gap: 20px;
  justify-content: center;
  
-
     
 }
 
@@ -122,14 +121,17 @@ font-size: 17px;
 box-shadow: -3px 3px 1px rgb(0, 0, 0);
 }
 .botao__reiniciar{
-    
+    background-color: blue;
     border-radius: 5px;
     width: 100px;
     height: 50px;
     font-size: 17px;
     font-family: var(--fonte01);
-    
 box-shadow: 3px 3px 1px rgb(0, 0, 0);
+}
+
+.botao__reiniciar:disabled{
+background-color: grey;
 }
 
 
