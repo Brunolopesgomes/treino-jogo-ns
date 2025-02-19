@@ -90,13 +90,15 @@ background-color: rgba(137, 43, 226, 0.759);
 
 .input{
     color:black;
-width:50%;
-height: 30px;
    border-radius: 5px; 
    margin-top: 10%;
    margin-bottom: 3%;
    background-color: rgb(16, 239, 239);
    
+   width: 23%;
+   height: 50px;
+   font-size: 20px;
+   text-align: center;
    text-align: center
 }
 
@@ -149,6 +151,12 @@ background-color: grey;
     }
 
 .input{
+    
+        width: 23%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        
 
 margin: 10% 0% 10% 0%;
 
@@ -171,80 +179,96 @@ margin: 10% 0% 10% 0%;
 
 @media screen and (min-width:768px){
     .conteudo01{
+        
+    margin-top: 1%;
+        width: 60%;
         display:flex ;
     justify-content: center;
     align-items: center;
     }   
+    .input{
+        width: 23%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+       padding-left: 2%;
+        }
 
 
 }
 @media screen and (min-width:1024px){
 
     .conteudo01{
-    margin-top: 5%;
-    width: 70%;
+    margin-top: 1%;
+    width: 50%;
     
     }
+    .input{
+        width: 23%;
+        height: 50px;
+        font-size: 20px;
+        text-align: center;
+        }
 
     
 }
 @media screen and (min-width:1440px) {
     
     .conteudo01{
-        margin-top: 2%;
-        width: 90%;
+        margin-top: 1%;
+        width: 40%;
         
         }
+        .input{
+            width: 23%;
+            height: 50px;
+            font-size: 20px;
+            text-align: center;
+            }
     
 
 
 }
 @media screen and (min-width:2560px){
     .conteudo01{
-        margin-top: 2%;
-        width: 60%;
-        height:1300px;
+        margin-top: 0.5%;
+        width: 40%;
+        height:700px;
         padding: 0%;
 
         
         }
         .conteudo__titulo h1{
-            width:1000px;
-            height: 210px;
-            font-size: 55px;
-            margin-top: -10%;
+
+            font-size: 35px;
+            margin-top: 1%;
             margin-bottom: 10%;
 
         
         }
         .texto__paragrafo{
             display: flex;
-            width:700px;
-            height: 150px;
-            font-size: 30px;
+            
+            font-size: 25px;
             align-items: center;
             justify-content: center;
         
         }
 
         .input{
-        width: 300px;
-        height: 100px;
-        font-size: 55px;
+        width: 23%;
+        height: 50px;
+        font-size: 20px;
         text-align: center;
-       
+       padding-left: 2%;
         }
 
 
         .botao__chute{
-        width:300px;
-        height: 150px;
-        font-size: 35px;
+        font-size: 25px;
         
         }
     .botao__reiniciar{
-        width:300px;
-        height: 150px;
-        font-size: 35px;
+        font-size: 25px;
     }
 }

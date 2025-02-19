@@ -1,8 +1,6 @@
 let listaDeNumeros = [];
-
 let numeroSecreto = gerarNumeroAleatorio();
 console.log(numeroSecreto);
-
 let tentativas = 1 ;
 let palavraTentativas = tentativas > 1? 'tentativas': 'tentativa';
 
@@ -55,19 +53,34 @@ let chute = document.querySelector('input').value;
 
 } 
 
+function endGame(){
+    if (listaDeNumeros.length == 10 ){
+        exibirTextoNaTela('h1', 'zerado');
+        exibirTextoNaTela('p', 'Parabens você terminou o jogo');
+        
+document.getElementById('reiniciar').setAttribute('disable', true);
+    }
+}
+
+
+
+
+
 function gerarNumeroAleatorio(){
   let numeroEscolhido = parseInt(Math.random() * 10 + 1);
-
+    endGame();
     if(listaDeNumeros.includes(numeroEscolhido)){
         return gerarNumeroAleatorio();
     }else{
         listaDeNumeros.push(numeroEscolhido);
         console.log(listaDeNumeros);
             return numeroEscolhido;
-        
-
     }
 }
+
+
+
+
 
 function limparCampo(){
 chute = document.querySelector('input');
@@ -78,5 +91,5 @@ function reiniciarJogo(){
 numeroSecreto = gerarNumeroAleatorio();
 limparCampo();
 exibirMensagemInicial();
-document.getElementById('reiniciar').setAttribute('disabled', true)
+document.getElementById('reiniciar').setAttribute('disabled', true);
 }
