@@ -56,7 +56,7 @@ let chute = document.querySelector('input').value;
 function endGame(){
     if (listaDeNumeros.length == 10 ){
         exibirTextoNaTela('h1', 'zerado');
-        exibirTextoNaTela('p', 'Parabens você terminou o jogo');
+        exibirTextoNaTela('p', 'Parabens você chegou ao fim do jogo');
         
 document.getElementById('reiniciar').setAttribute('disable', true);
     }
