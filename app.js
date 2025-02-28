@@ -47,7 +47,7 @@ let chute = document.querySelector('input').value;
 
 
             }
-        tentativas++;
+        tentativas = tentativas + 1;
         limparCampo();
         }
 
@@ -58,7 +58,7 @@ function endGame(){
     if (listaDeNumeros.length == 10 ){
         exibirTextoNaTela('h1', 'zerado');
         exibirTextoNaTela('p', 'Parabens você chegou ao fim do jogo');
-        
+        limparCampo();
 document.getElementById('reiniciar').setAttribute('disable', true);
     }
 }
@@ -90,6 +90,7 @@ chute.value = '';
 }
 function reiniciarJogo(){
 numeroSecreto = gerarNumeroAleatorio();
+tentativas = 1 ;
 limparCampo();
 exibirMensagemInicial();
 document.getElementById('reiniciar').setAttribute('disabled', true);
