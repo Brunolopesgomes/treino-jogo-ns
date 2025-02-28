@@ -2,6 +2,7 @@ let listaDeNumeros = [];
 let numeroSecreto = gerarNumeroAleatorio();
 console.log(numeroSecreto);
 let tentativas = 1 ;
+let numeroLimite = 10;
 let palavraTentativas = tentativas > 1? 'tentativas': 'tentativa';
 
 function exibirTextoNaTela(tag,texto){
@@ -10,16 +11,16 @@ campoTag.innerHTML = texto;
 
 }
 exibirTextoNaTela('h1', 'Bem vindo ao jogo do numero secreto');
-exibirTextoNaTela('p','Escolha um numero de 1 a 10');
+exibirTextoNaTela('p','Escolha um numero de 1 a ' + numeroLimite);
 
 function exibirMensagemInicial(){
     exibirTextoNaTela('h1', 'Bem vindo ao jogo do numero secreto');
-    exibirTextoNaTela('p','Escolha um numero de 1 a 10');
+    exibirTextoNaTela('p','Escolha um numero de 1 a '+ numeroLimite);
 }
 
 function mensagemAcerto(){
     exibirTextoNaTela('h1', `Parabens, o numero secreto era ${numeroSecreto} com ${tentativas} ${palavraTentativas}`);
-    exibirTextoNaTela('p','Escolha novamente entre 1 e 10');
+    exibirTextoNaTela('p','Escolha novamente entre 1 e '+ numeroLimite);
 
 }
 
